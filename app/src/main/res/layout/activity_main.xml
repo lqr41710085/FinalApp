@@ -10,12 +10,12 @@
         android:id="@+id/pic"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:clickable="true"
         android:src="@drawable/bookpic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newbook" />
+        app:layout_constraintTop_toBottomOf="@+id/searchlabel" />
 
     <View
         android:id="@+id/divider"
@@ -27,22 +27,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <SearchView
-        android:id="@+id/search"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchlabel" />
-
     <TextView
         android:id="@+id/title"
         android:layout_width="400dp"
         android:layout_height="80dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
         android:text="write money "
         android:textColor="#0C0C0C"
@@ -56,27 +45,17 @@
         android:id="@+id/searchlabel"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
         android:gravity="center_horizontal"
-        android:text="search"
+        android:text="click me to search"
         android:textColor="#0F0E0E"
         android:textSize="30sp"
         app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
-
-    <TextView
-        android:id="@+id/newbook"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:text="new a book"
-        android:textColor="#141313"
-        android:textSize="30sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/search"
-        app:layout_constraintTop_toBottomOf="@+id/search" />
 
     <TextView
         android:id="@+id/about"
@@ -89,5 +68,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/pic"
         app:layout_constraintStart_toStartOf="@+id/pic" />
+
+    <TextView
+        android:id="@+id/newlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="new book"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toEndOf="@+id/pic"
+        app:layout_constraintStart_toStartOf="@+id/pic"
+        app:layout_constraintTop_toBottomOf="@+id/pic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
