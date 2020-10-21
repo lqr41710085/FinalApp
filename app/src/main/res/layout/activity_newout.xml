@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newout">
+
+    <Button
+        android:id="@+id/foodbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Food"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/entertainbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entertain"
+        android:textColor="#181616"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toStartOf="@+id/trafficbtn"
+        app:layout_constraintStart_toEndOf="@+id/foodbtn"
+        app:layout_constraintTop_toTopOf="@+id/foodbtn" />
+
+    <Button
+        android:id="@+id/trafficbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Traffic"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/entertainbtn" />
+
+    <Button
+        android:id="@+id/clothesbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clothes"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toEndOf="@+id/trafficbtn"
+        app:layout_constraintTop_toTopOf="@+id/studybtn" />
+
+    <Button
+        android:id="@+id/housebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="House"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintStart_toStartOf="@+id/foodbtn"
+        app:layout_constraintTop_toBottomOf="@+id/foodbtn" />
+
+    <Button
+        android:id="@+id/studybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Study"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toStartOf="@+id/clothesbtn"
+        app:layout_constraintStart_toEndOf="@+id/housebtn"
+        app:layout_constraintTop_toTopOf="@+id/housebtn" />
+
+    <Button
+        android:id="@+id/tourbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tour"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintStart_toStartOf="@+id/housebtn"
+        app:layout_constraintTop_toBottomOf="@+id/housebtn" />
+
+    <Button
+        android:id="@+id/medical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Medical"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toStartOf="@+id/otheroutbtn"
+        app:layout_constraintStart_toEndOf="@+id/tourbtn"
+        app:layout_constraintTop_toTopOf="@+id/tourbtn" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+
+        android:text="OUT"
+        android:textColor="#181616"
+        android:textSize="50sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/otheroutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Others"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/medical" />
+
+    <Button
+        android:id="@+id/outsubmit"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="Submit"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

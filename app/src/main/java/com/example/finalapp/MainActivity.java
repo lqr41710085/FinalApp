@@ -20,5 +20,9 @@ public class MainActivity extends AppCompatActivity {
             Intent in=new Intent(this,About.class);
             startActivity(in);
         }
+        else if(btn.getId()==R.id.pic){
+            Intent in=new Intent(this,newbook.class);
+            startActivity(in);
+        }
     }
 }
