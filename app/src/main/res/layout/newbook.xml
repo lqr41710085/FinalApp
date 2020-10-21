@@ -13,6 +13,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:ems="10"
+        android:hint="default today"
         android:inputType="date"
         app:layout_constraintStart_toEndOf="@+id/datelabel"
         app:layout_constraintTop_toTopOf="@+id/datelabel" />
@@ -67,4 +68,6 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/date"
         app:layout_constraintTop_toTopOf="@+id/inbtn" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

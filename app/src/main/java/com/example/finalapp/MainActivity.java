@@ -16,13 +16,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onclick(View btn){
-        if(btn.getId()==R.id.about){
+        if(btn.getId()==R.id.about){ //about
             Intent in=new Intent(this,About.class);
             startActivity(in);
         }
-        else if(btn.getId()==R.id.pic){
+        else if(btn.getId()==R.id.pic){//new a book
             Intent in=new Intent(this,newbook.class);
             startActivity(in);
+        }
+        else {//search
+
         }
     }
 }

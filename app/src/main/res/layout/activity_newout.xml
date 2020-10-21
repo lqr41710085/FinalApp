@@ -14,6 +14,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
         android:gravity="center_horizontal"
+        android:onClick="outclick"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:text="Food"
         android:textColor="#181616"
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="entertain"
+        android:onClick="outclick"
         android:textColor="#181616"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textSize="20sp"
@@ -37,6 +39,7 @@
 
     <Button
         android:id="@+id/trafficbtn"
+        android:onClick="outclick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -52,6 +55,7 @@
     <Button
         android:id="@+id/clothesbtn"
         android:layout_width="wrap_content"
+        android:onClick="outclick"
         android:layout_height="wrap_content"
         android:text="Clothes"
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -65,6 +69,7 @@
         android:id="@+id/housebtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="outclick"
         android:layout_marginTop="20dp"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:text="House"
@@ -77,6 +82,7 @@
     <Button
         android:id="@+id/studybtn"
         android:layout_width="wrap_content"
+        android:onClick="outclick"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
@@ -94,6 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:onClick="outclick"
         android:text="Tour"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="#181616"
@@ -103,9 +110,10 @@
         app:layout_constraintTop_toBottomOf="@+id/housebtn" />
 
     <Button
-        android:id="@+id/medical"
+        android:id="@+id/medicalbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="outclick"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:text="Medical"
         android:textColor="#181616"
@@ -136,13 +144,14 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
+        android:onClick="outclick"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:text="Others"
         android:textColor="#181616"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/medical" />
+        app:layout_constraintTop_toTopOf="@+id/medicalbtn" />
 
     <Button
         android:id="@+id/outsubmit"
@@ -150,6 +159,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
+        android:onClick="outclick"
         android:text="Submit"
         android:textColor="#181616"
         android:textSize="20sp"
