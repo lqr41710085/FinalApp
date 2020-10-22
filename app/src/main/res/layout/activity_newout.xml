@@ -6,221 +6,279 @@
     android:layout_height="match_parent"
     tools:context=".newout">
 
-    <Button
-        android:id="@+id/foodbtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"
-        android:gravity="center_horizontal"
-        android:onClick="outclick"
-        android:text="Food"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/entertainbtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="outclick"
-        android:text="entertain"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/clothesbtn"
-        app:layout_constraintTop_toBottomOf="@+id/clothesbtn" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/trafficbtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="outclick"
-        android:text="Traffic"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/entertainbtn"
-        app:layout_constraintTop_toBottomOf="@+id/entertainbtn" />
+            android:gravity="center_horizontal"
 
-    <Button
-        android:id="@+id/clothesbtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="outclick"
-        android:text="Clothes"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/studybtn"
-        app:layout_constraintTop_toBottomOf="@+id/studybtn" />
+            android:text="OUT"
+            android:textColor="#181616"
+            android:textSize="50sp"
+            app:fontFamily="@font/architects_daughter" />
 
-    <Button
-        android:id="@+id/housebtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="outclick"
-        android:text="House"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/foodbtn"
-        app:layout_constraintTop_toBottomOf="@+id/foodbtn" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/studybtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="outclick"
-        android:text="Study"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/medicalbtn"
-        app:layout_constraintTop_toBottomOf="@+id/medicalbtn" />
+            <TextView
+                android:id="@+id/foodl"
 
-    <Button
-        android:id="@+id/medicalbtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="outclick"
-        android:text="Medical"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/housebtn"
-        app:layout_constraintTop_toBottomOf="@+id/housebtn" />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
 
-        android:text="OUT"
-        android:textColor="#181616"
-        android:textSize="50sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                android:paddingLeft="20dp"
 
-    <Button
-        android:id="@+id/otheroutbtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="outclick"
-        android:text="Others"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="@+id/trafficbtn"
-        app:layout_constraintTop_toBottomOf="@+id/trafficbtn" />
+                android:text="Food"
+                android:textColor="#181616"
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
 
-    <Button
-        android:id="@+id/outsubmit"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:onClick="outclick"
-        android:text="Submit"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal"
+                android:padding="10dp" />
 
-    <EditText
-        android:id="@+id/food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/title"
-        app:layout_constraintTop_toTopOf="@+id/foodbtn" />
+        </TableRow>
 
-    <EditText
-        android:id="@+id/house"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/food"
-        app:layout_constraintTop_toTopOf="@+id/housebtn" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/medical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/house"
-        app:layout_constraintTop_toTopOf="@+id/medicalbtn" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/entertainbtn"
 
-    <EditText
-        android:id="@+id/study"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/medical"
-        app:layout_constraintTop_toTopOf="@+id/studybtn" />
 
-    <EditText
-        android:id="@+id/clothes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/study"
-        app:layout_constraintTop_toTopOf="@+id/clothesbtn" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="entertain"
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:textColor="#181616"
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
 
-    <EditText
-        android:id="@+id/others"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/clothes"
-        app:layout_constraintTop_toTopOf="@+id/otheroutbtn" />
+            <EditText
+                android:id="@+id/entertain"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </TableRow>
 
-    <EditText
-        android:id="@+id/entertain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/clothes"
-        app:layout_constraintTop_toTopOf="@+id/entertainbtn" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/traffic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/entertain"
-        app:layout_constraintTop_toTopOf="@+id/trafficbtn" />
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/trafficbtn"
+
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Traffic"
+                android:textColor="#181616"
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
+
+            <EditText
+                android:id="@+id/traffic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/clothesbtn"
+
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Clothes"
+
+                android:textColor="#181616"
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
+
+            <EditText
+                android:id="@+id/clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/housebtn"
+
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="House"
+                android:textColor="#181616"
+
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
+
+            <EditText
+                android:id="@+id/house"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/studybtn"
+
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Study"
+                android:textColor="#181616"
+
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
+
+            <EditText
+                android:id="@+id/study"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/medicalbtn"
+
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Medical"
+                android:textColor="#181616"
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
+
+            <EditText
+                android:id="@+id/medical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="20dp"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/otheroutl"
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:text="Others"
+                android:textColor="#181616"
+                android:textSize="20sp"
+                app:fontFamily="@font/architects_daughter" />
+
+            <EditText
+                android:id="@+id/others"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/notel"
+                android:layout_width="150dp"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textColor="#181616"
+                android:fontFamily="@font/architects_daughter"
+                />
+
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/outsubmit"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="outclick"
+            android:text="Submit"
+            android:textColor="#181616"
+            android:textSize="20sp"
+            app:fontFamily="@font/architects_daughter" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

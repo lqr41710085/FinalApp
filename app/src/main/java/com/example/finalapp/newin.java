@@ -42,5 +42,6 @@ public class newin extends AppCompatActivity {
 
 
         }
+        this.finish();
     }
 }
