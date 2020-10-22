@@ -25,7 +25,7 @@ public class newbook extends AppCompatActivity {
         EditText datetext=findViewById(R.id.date);
         String date;
         if(!datetext.getText().toString().equals(""))
-            date=datetext.toString();
+            date=datetext.getText().toString();
         else {
             //设置日期
             Date d=new Date(System.currentTimeMillis());

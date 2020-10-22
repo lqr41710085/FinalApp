@@ -8,14 +8,14 @@
 
     <Button
         android:id="@+id/foodbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
         android:onClick="outclick"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:text="Food"
         android:textColor="#181616"
         android:textSize="20sp"
@@ -25,53 +25,53 @@
 
     <Button
         android:id="@+id/entertainbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="entertain"
+        android:layout_marginTop="10dp"
         android:onClick="outclick"
+        android:text="entertain"
         android:textColor="#181616"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
-        app:layout_constraintEnd_toStartOf="@+id/trafficbtn"
-        app:layout_constraintStart_toEndOf="@+id/foodbtn"
-        app:layout_constraintTop_toTopOf="@+id/foodbtn" />
+        app:layout_constraintStart_toStartOf="@+id/clothesbtn"
+        app:layout_constraintTop_toBottomOf="@+id/clothesbtn" />
 
     <Button
         android:id="@+id/trafficbtn"
-        android:onClick="outclick"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="10dp"
+        android:onClick="outclick"
         android:text="Traffic"
         android:textColor="#181616"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/entertainbtn" />
+        app:layout_constraintStart_toStartOf="@+id/entertainbtn"
+        app:layout_constraintTop_toBottomOf="@+id/entertainbtn" />
 
     <Button
         android:id="@+id/clothesbtn"
-        android:layout_width="wrap_content"
-        android:onClick="outclick"
-        android:layout_height="wrap_content"
-        android:text="Clothes"
         style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="outclick"
+        android:text="Clothes"
         android:textColor="#181616"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
-        app:layout_constraintEnd_toEndOf="@+id/trafficbtn"
-        app:layout_constraintTop_toTopOf="@+id/studybtn" />
+        app:layout_constraintStart_toStartOf="@+id/studybtn"
+        app:layout_constraintTop_toBottomOf="@+id/studybtn" />
 
     <Button
         android:id="@+id/housebtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:onClick="outclick"
-        android:layout_marginTop="20dp"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:text="House"
         android:textColor="#181616"
         android:textSize="20sp"
@@ -81,53 +81,37 @@
 
     <Button
         android:id="@+id/studybtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
-        android:onClick="outclick"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:onClick="outclick"
         android:text="Study"
         android:textColor="#181616"
         android:textSize="20sp"
-        style="@style/Widget.AppCompat.Button.Borderless"
         app:fontFamily="@font/architects_daughter"
-        app:layout_constraintEnd_toStartOf="@+id/clothesbtn"
-        app:layout_constraintStart_toEndOf="@+id/housebtn"
-        app:layout_constraintTop_toTopOf="@+id/housebtn" />
+        app:layout_constraintStart_toStartOf="@+id/medicalbtn"
+        app:layout_constraintTop_toBottomOf="@+id/medicalbtn" />
 
     <Button
-        android:id="@+id/tourbtn"
+        android:id="@+id/medicalbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:onClick="outclick"
-        android:text="Tour"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Medical"
         android:textColor="#181616"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
         app:layout_constraintStart_toStartOf="@+id/housebtn"
         app:layout_constraintTop_toBottomOf="@+id/housebtn" />
 
-    <Button
-        android:id="@+id/medicalbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="outclick"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:text="Medical"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintEnd_toStartOf="@+id/otheroutbtn"
-        app:layout_constraintStart_toEndOf="@+id/tourbtn"
-        app:layout_constraintTop_toTopOf="@+id/tourbtn" />
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
 
         android:text="OUT"
@@ -140,25 +124,24 @@
 
     <Button
         android:id="@+id/otheroutbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
         android:onClick="outclick"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:text="Others"
         android:textColor="#181616"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/medicalbtn" />
+        app:layout_constraintStart_toStartOf="@+id/trafficbtn"
+        app:layout_constraintTop_toBottomOf="@+id/trafficbtn" />
 
     <Button
         android:id="@+id/outsubmit"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="20dp"
         android:onClick="outclick"
         android:text="Submit"
         android:textColor="#181616"
@@ -167,5 +150,77 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/foodbtn" />
+
+    <EditText
+        android:id="@+id/house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/food"
+        app:layout_constraintTop_toTopOf="@+id/housebtn" />
+
+    <EditText
+        android:id="@+id/medical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/house"
+        app:layout_constraintTop_toTopOf="@+id/medicalbtn" />
+
+    <EditText
+        android:id="@+id/study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/medical"
+        app:layout_constraintTop_toTopOf="@+id/studybtn" />
+
+    <EditText
+        android:id="@+id/clothes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/study"
+        app:layout_constraintTop_toTopOf="@+id/clothesbtn" />
+
+    <EditText
+        android:id="@+id/others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/clothes"
+        app:layout_constraintTop_toTopOf="@+id/otheroutbtn" />
+
+    <EditText
+        android:id="@+id/entertain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/clothes"
+        app:layout_constraintTop_toTopOf="@+id/entertainbtn" />
+
+    <EditText
+        android:id="@+id/traffic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/entertain"
+        app:layout_constraintTop_toTopOf="@+id/trafficbtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
