@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(in);
         }
         else if(btn.getId()==R.id.pic){//new a book
-            Intent in=new Intent(this,newbook.class);
+            Intent in=new Intent(this,Newbook.class);
             startActivity(in);
         }
         else {//search

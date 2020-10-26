@@ -13,8 +13,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class newout extends AppCompatActivity {
-    private static String TAG="newout";
+public class Newout extends AppCompatActivity {
+    private static String TAG="Newout";
     float food=0f,entertain=0f,traffic=0f,clothes=0f,house=0f,study=0f,medical=0f,others=0f,all=0.0f;
     String notes="";
     @Override

@@ -4,18 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class newbook extends AppCompatActivity {
+public class Newbook extends AppCompatActivity {
 
-    private static String TAG="newbook";
+    private static String TAG="Newbook";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,12 +32,12 @@ public class newbook extends AppCompatActivity {
         }
 
         if(view.getId()==R.id.outbtn){
-            Intent in=new Intent(this,newout.class);
+            Intent in=new Intent(this, Newout.class);
             in.putExtra("date",date);
             startActivity(in);
         }
         if(view.getId()==R.id.inbtn){
-            Intent in=new Intent(this,newin.class);
+            Intent in=new Intent(this, Newin.class);
             in.putExtra("date",date);
             startActivity(in);
         }
