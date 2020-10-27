@@ -1,16 +1,14 @@
 package com.example.finalapp;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Newout extends AppCompatActivity {
@@ -23,11 +21,10 @@ public class Newout extends AppCompatActivity {
         setContentView(R.layout.activity_newout);
 
     }
-
-
     public void outclick(View view){
         Intent in=this.getIntent();
         String date=in.getStringExtra("date");
+
         if(view.getId()==R.id.outsubmit){
             EditText t1=findViewById(R.id.food);
             EditText t2 = findViewById(R.id.entertain);
@@ -37,7 +34,7 @@ public class Newout extends AppCompatActivity {
             EditText t6=findViewById(R.id.study);
             EditText t7=findViewById(R.id.medical);
             EditText t8=findViewById(R.id.others);
-            EditText t9=findViewById(R.id.notes);
+            EditText t9=findViewById(R.id.notes2);
             if(!t1.getText().toString().equals(""))
                 food=Float.parseFloat(t1.getText().toString());
             if(!t2.getText().toString().equals(""))
@@ -59,6 +56,13 @@ public class Newout extends AppCompatActivity {
             all=food+entertain+traffic+clothes+house+study+medical+others;
             Log.i(TAG,"hhhhall=="+all+"--"+date+"  "+notes);
             //写入数据库
+            DBmanager m=new DBmanager(Newout.this);
+           // String date, String type, String note, float food, float entertain, float traffic, float clothes, float house,
+            //float study, float medical, float others
+            Item item=new Item(date,"out",notes,food,entertain,traffic,clothes,house,study,medical,others);
+            m.add(item,"out");
+            Log.i(TAG,"hhhsubmit=="+all);
+            Toast.makeText(Newout.this,"submit successfully! "+date,Toast.LENGTH_LONG);
         }
         this.finish();
     }

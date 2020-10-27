@@ -49,7 +49,7 @@
         android:id="@+id/parttimelabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="PartTime"
         android:textColor="#181616"
         android:textSize="20sp"
@@ -70,7 +70,7 @@
         android:id="@+id/redpacketlabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="RedPacket"
         android:textColor="#181616"
         android:textSize="20sp"
@@ -91,11 +91,11 @@
         android:id="@+id/otherinlabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Others"
         android:textColor="#181616"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
-        android:text="Others"
         app:layout_constraintStart_toStartOf="@+id/redpacketlabel"
         app:layout_constraintTop_toBottomOf="@+id/redpacketlabel" />
 
@@ -107,7 +107,27 @@
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="@+id/redpacket"
         app:layout_constraintTop_toTopOf="@+id/otherinlabel" />
+    <TextView
+        android:id="@+id/notel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Notes"
+        android:textColor="#181616"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintStart_toStartOf="@+id/otherinlabel"
+        app:layout_constraintTop_toBottomOf="@+id/otherinlabel" />
 
+    <EditText
+        android:id="@+id/notes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/otherin"
+        app:layout_constraintStart_toStartOf="@+id/otherin"
+        app:layout_constraintTop_toTopOf="@+id/notel" />
     <Button
         android:id="@+id/insubmit"
         android:layout_width="wrap_content"
@@ -123,4 +143,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
