@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".search">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/words"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:hint="here enter keywords"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:onClick="click"
+                android:text="SEARCH"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/history"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/architects_daughter"
+                        android:gravity="left|center_vertical"
+                        android:text="History"
+                        android:textSize="20sp" />
+
+                    <com.example.finalapp.searchListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#F6F6F6"
+                    android:fontFamily="@font/architects_daughter"
+                    android:gravity="center"
+                    android:onClick="click"
+                    android:text="Clear History" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>

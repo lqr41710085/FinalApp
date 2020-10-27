@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Newin"></activity>
-        <activity android:name=".Newout"></activity>
+        <activity android:name=".search"></activity>
+        <activity android:name=".Newin" />
+        <activity android:name=".Newout" />
         <activity android:name=".Newbook" />
         <activity android:name=".About" />
         <activity android:name=".MainActivity">
