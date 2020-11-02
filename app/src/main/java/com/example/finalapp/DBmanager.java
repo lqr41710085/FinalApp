@@ -43,6 +43,11 @@ public class DBmanager {
         db.insert(TBNAME,null,values);
         db.close();
     }
+    public Cursor findRecord(String words){
+        Cursor cursor=dbhelper.getReadableDatabase().rawQuery(
+                "select * from "+TBNAME+" where date like '%"+words+"%' or note like '%"+words+"%'",null);
+        return cursor;
+    }
     public void deleteAll(){
         SQLiteDatabase db = dbhelper.getWritableDatabase();
         db.delete(TBNAME,null,null);

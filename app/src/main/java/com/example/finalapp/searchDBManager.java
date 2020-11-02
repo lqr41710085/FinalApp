@@ -10,7 +10,7 @@ public class searchDBManager {
     private String TB_NAME;
     public searchDBManager(Context context){
         searchhelper=new searchDBHelper(context);
-        TB_NAME=searchDBHelper.TB_NAME;
+        TB_NAME=searchhelper.TB_NAME;
     }
     public void addRecord(String words){
         SQLiteDatabase db=searchhelper.getWritableDatabase();
@@ -22,6 +22,7 @@ public class searchDBManager {
     public Cursor getRecord(){
         Cursor cursor=searchhelper.getReadableDatabase().rawQuery(
                 "select * from "+TB_NAME,null);
+
         return cursor;
     }
     public Cursor findRecord(String words){

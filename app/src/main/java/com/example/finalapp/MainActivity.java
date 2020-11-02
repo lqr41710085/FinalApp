@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,13 +21,16 @@ public class MainActivity extends AppCompatActivity {
             Intent in=new Intent(this,About.class);
             startActivity(in);
         }
-        else if(btn.getId()==R.id.pic){//new a book
+        if(btn.getId()==R.id.pic){//new a book
             Intent in=new Intent(this,Newbook.class);
             startActivity(in);
         }
-        else {//search
+        if(btn.getId()==R.id.searchlabel) {//search
             Intent in=new Intent(this,search.class);
             startActivity(in);
         }
     }
+
+
+
 }
