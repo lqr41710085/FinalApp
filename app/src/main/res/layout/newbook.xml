@@ -6,30 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:ems="10"
-        android:hint="default today"
-        android:inputType="date"
-        app:layout_constraintStart_toEndOf="@+id/datelabel"
-        app:layout_constraintTop_toTopOf="@+id/datelabel" />
 
-    <TextView
-        android:id="@+id/datelabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="80dp"
-        android:text="DATE"
-        android:textColor="#181616"
-        android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
-        app:layout_constraintStart_toStartOf="parent"
+    <DatePicker
+        android:id="@+id/date"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/newtitle"
+        app:layout_constraintStart_toStartOf="@+id/newtitle"
         app:layout_constraintTop_toBottomOf="@+id/newtitle" />
 
     <TextView
@@ -40,7 +26,7 @@
         android:textSize="50sp"
         android:gravity="center_horizontal"
         app:fontFamily="@font/architects_daughter"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:text="New Book"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,14 +36,14 @@
         android:id="@+id/inbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+
+        android:layout_marginBottom="80dp"
         android:onClick="newbook"
         android:text="IN"
         android:textColor="#181616"
         android:textSize="20sp"
-
-        app:layout_constraintStart_toStartOf="@+id/datelabel"
-        app:layout_constraintTop_toBottomOf="@+id/datelabel" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/newtitle" />
 
     <Button
         android:id="@+id/outbtn"
@@ -67,7 +53,7 @@
         android:text="OUT"
         android:textColor="#181616"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="@+id/newtitle"
         app:layout_constraintTop_toTopOf="@+id/inbtn" />
 
 

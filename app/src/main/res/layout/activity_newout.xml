@@ -12,17 +12,17 @@
         android:orientation="vertical">
 
         <TextView
-            android:padding="10dp"
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:gravity="center_horizontal"
+
+            android:padding="10dp"
 
             android:text="OUT"
             android:textColor="#181616"
             android:textSize="50sp"
-            app:fontFamily="@font/architects_daughter" />
+            app:fontFamily="casual" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -30,18 +30,14 @@
 
             <TextView
                 android:id="@+id/foodl"
-
-
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-
                 android:paddingLeft="20dp"
-
                 android:text="Food"
                 android:textColor="#181616"
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+                 />
 
             <EditText
                 android:id="@+id/food"
@@ -61,8 +57,6 @@
             <TextView
                 android:gravity="center_horizontal"
                 android:id="@+id/entertainbtn"
-
-
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="entertain"
@@ -70,7 +64,7 @@
                 android:paddingLeft="20dp"
                 android:textColor="#181616"
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+                 />
 
             <EditText
                 android:id="@+id/entertain"
@@ -97,7 +91,7 @@
                 android:text="Traffic"
                 android:textColor="#181616"
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+                />
 
             <EditText
                 android:id="@+id/traffic"
@@ -124,7 +118,7 @@
 
                 android:textColor="#181616"
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+                 />
 
             <EditText
                 android:id="@+id/clothes"
@@ -151,7 +145,7 @@
                 android:textColor="#181616"
 
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+                 />
 
             <EditText
                 android:id="@+id/house"
@@ -178,7 +172,7 @@
                 android:textColor="#181616"
 
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+               />
 
             <EditText
                 android:id="@+id/study"
@@ -205,7 +199,7 @@
                 android:text="Medical"
                 android:textColor="#181616"
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+               />
 
             <EditText
                 android:id="@+id/medical"
@@ -231,7 +225,7 @@
                 android:text="Others"
                 android:textColor="#181616"
                 android:textSize="20sp"
-                app:fontFamily="@font/architects_daughter" />
+                />
 
             <EditText
                 android:id="@+id/others"
@@ -256,7 +250,7 @@
                 android:textSize="20sp"
                 android:gravity="center_horizontal"
                 android:textColor="#181616"
-                android:fontFamily="@font/architects_daughter"
+
                 />
 
             <EditText
@@ -271,6 +265,7 @@
         <Button
             android:id="@+id/outsubmit"
             style="@style/Widget.AppCompat.Button"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -278,7 +273,7 @@
             android:text="Submit"
             android:textColor="#181616"
             android:textSize="20sp"
-            app:fontFamily="@font/architects_daughter" />
+            app:fontFamily="casual" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

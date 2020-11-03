@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/architects_daughter"
+                android:fontFamily="casual"
                 android:text="Date:"
                 android:textColor="#131212"
                 android:textSize="25sp" />
@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/architects_daughter"
+                android:fontFamily="casual"
                 android:text="Notes:"
                 android:textColor="#131212"
                 android:textSize="25sp" />
@@ -55,7 +55,7 @@
                     android:id="@+id/intext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/architects_daughter"
+                    android:fontFamily="casual"
                     android:text="IN"
                     android:textColor="#131212"
                     android:textSize="25sp" />
@@ -65,49 +65,101 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/wagetext"
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="wages:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
 
-                    <TextView
-                        android:id="@+id/parttext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="parttime revenue:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="wages:" />
 
-                    <TextView
-                        android:id="@+id/packettext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="redpacket:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/wagetext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
 
-                    <TextView
-                        android:id="@+id/otherintext"
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="others:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="100dp"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:text="parttime:" />
+
+                        <TextView
+                            android:id="@+id/parttext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="redpacket:" />
+
+                        <TextView
+                            android:id="@+id/packettext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="others:" />
+
+                        <TextView
+                            android:id="@+id/otherintext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
 
                     <TextView
                         android:id="@+id/allintext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
+                        android:fontFamily="casual"
                         android:gravity="right"
-                        android:text="all:"
+                        android:text="all: "
                         android:textColor="#131212"
                         android:textSize="25sp" />
                 </LinearLayout>
@@ -129,7 +181,7 @@
                     android:id="@+id/outtext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/architects_daughter"
+                    android:fontFamily="casual"
                     android:text="OUT"
                     android:textColor="#131212"
                     android:textSize="25sp" />
@@ -139,83 +191,187 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/foodtext"
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="food:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
 
-                    <TextView
-                        android:id="@+id/entertaintext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="entertainment:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="food:" />
 
-                    <TextView
-                        android:id="@+id/traffictext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="traffic:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/foodtext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
 
-                    <TextView
-                        android:id="@+id/clothestext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="clothes:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
 
-                    <TextView
-                        android:id="@+id/housetext"
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="house:"
-                        android:textColor="#131212"
-                        android:textSize="20sp" />
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
 
-                    <TextView
-                        android:id="@+id/studytext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="study:"
-                        android:textColor="#FC131212"
-                        android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="entertain:" />
 
-                    <TextView
-                        android:id="@+id/medicaltext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="medical:"
-                        android:textColor="#F7131212"
-                        android:textSize="20sp" />
+                        <TextView
+                            android:id="@+id/entertaintext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
 
-                    <TextView
-                        android:id="@+id/otherouttext"
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
-                        android:text="others:"
-                        android:textColor="#FA131212"
-                        android:textSize="20sp" />
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="traffic:" />
+
+                        <TextView
+                            android:id="@+id/traffictext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="clothes:" />
+
+                        <TextView
+                            android:id="@+id/clothestext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="house:" />
+
+                        <TextView
+                            android:id="@+id/housetext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="study:" />
+
+                        <TextView
+                            android:id="@+id/studytext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#FC131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="medical:" />
+
+                        <TextView
+                            android:id="@+id/medicaltext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#F7131212"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="others:" />
+
+                        <TextView
+                            android:id="@+id/otherouttext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="0"
+                            android:textColor="#FA131212"
+                            android:textSize="20sp" />
+                    </TableRow>
 
                     <TextView
                         android:id="@+id/allouttext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/architects_daughter"
+                        android:fontFamily="casual"
                         android:gravity="right"
                         android:text="all:"
                         android:textColor="#F7131212"
@@ -236,7 +392,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/architects_daughter"
+                android:fontFamily="casual"
                 android:text="BALANCE"
                 android:textColor="#131212"
                 android:textSize="25sp" />

@@ -10,12 +10,12 @@
         android:id="@+id/intitle"
         android:layout_width="60dp"
         android:layout_height="80dp"
-        android:gravity="center_horizontal"
         android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
         android:text="IN"
         android:textColor="#181616"
         android:textSize="50sp"
-        app:fontFamily="@font/architects_daughter"
+        app:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,7 @@
         android:text="Wage"
         android:textColor="#181616"
         android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intitle" />
 
@@ -53,7 +53,7 @@
         android:text="PartTime"
         android:textColor="#181616"
         android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
+
         app:layout_constraintStart_toStartOf="@+id/wagelabel"
         app:layout_constraintTop_toBottomOf="@+id/wagelabel" />
 
@@ -74,7 +74,7 @@
         android:text="RedPacket"
         android:textColor="#181616"
         android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
+
         app:layout_constraintStart_toStartOf="@+id/parttimelabel"
         app:layout_constraintTop_toBottomOf="@+id/parttimelabel" />
 
@@ -95,7 +95,7 @@
         android:text="Others"
         android:textColor="#181616"
         android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
+
         app:layout_constraintStart_toStartOf="@+id/redpacketlabel"
         app:layout_constraintTop_toBottomOf="@+id/redpacketlabel" />
 
@@ -115,7 +115,7 @@
         android:text="Notes"
         android:textColor="#181616"
         android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
+
         app:layout_constraintStart_toStartOf="@+id/otherinlabel"
         app:layout_constraintTop_toBottomOf="@+id/otherinlabel" />
 
@@ -128,9 +128,10 @@
         app:layout_constraintEnd_toEndOf="@+id/otherin"
         app:layout_constraintStart_toStartOf="@+id/otherin"
         app:layout_constraintTop_toTopOf="@+id/notel" />
+
     <Button
         android:id="@+id/insubmit"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:onClick="submit"
@@ -138,7 +139,7 @@
         android:text="Submit"
         android:textColor="#181616"
         android:textSize="20sp"
-        app:fontFamily="@font/architects_daughter"
+        app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

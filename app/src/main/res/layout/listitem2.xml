@@ -7,7 +7,7 @@
         android:id="@+id/wordtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/architects_daughter"
+
         android:gravity="left"
         android:onClick="click"
         android:textColor="#161515"
@@ -19,7 +19,7 @@
         android:onClick="click"
         android:singleLine="true"
         android:ellipsize="end"
-        android:fontFamily="@font/architects_daughter"
+
         android:textColor="#9F131212"
         android:textSize="20sp"
 
