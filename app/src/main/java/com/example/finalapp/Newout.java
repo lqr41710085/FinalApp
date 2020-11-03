@@ -62,7 +62,7 @@ public class Newout extends AppCompatActivity {
             Item item=new Item(date,"out",notes,food,entertain,traffic,clothes,house,study,medical,others);
             m.add(item,"out");
             Log.i(TAG,"hhhsubmit=="+all);
-            Toast.makeText(Newout.this,"submit successfully! "+date,Toast.LENGTH_LONG);
+            Toast.makeText(Newout.this,"submit successfully! "+date,Toast.LENGTH_LONG).show();
         }
         this.finish();
     }

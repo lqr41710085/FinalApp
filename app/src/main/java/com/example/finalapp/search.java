@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.Editable;
@@ -89,20 +90,6 @@ public class search extends AppCompatActivity{
 
             }
         });
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //显示记录
-
-                    //插入serach_db
-                    if(!m_search.findRecord(words.getText().toString().trim()).moveToNext()) {
-                        m_search.addRecord(words.getText().toString().trim());
-                        cursor = m_search.getRecord();
-                        changeAdapter(cursor,"search");
-                    }
-
-            }
-        });
 
     }
     public void click(View view){
@@ -120,7 +107,29 @@ public class search extends AppCompatActivity{
             cursor = m_search.getRecord();
             changeAdapter(cursor,"search");
         }
+        if(view.getId()==R.id.item){
+            TextView v=(TextView)view;
+            String s=v.getText().toString().trim();
+            words.setText(s);
+            words.selectAll();
+            cursor=m_db.findRecord(s);
+            changeAdapter(cursor,"db");
+        }
+        if(view.getId()==R.id.wordtext||view.getId()==R.id.detail){
+            TextView v=(TextView)view;
+            String s[]=v.getText().toString().split(":");
+            String date=s[0];
+            Intent in=new Intent(search.this,searchdetail.class);
+            in.putExtra("date",date);
+            //插入serach_db
+            if(!m_search.findRecord(words.getText().toString().trim()).moveToNext()) {
+                m_search.addRecord(words.getText().toString().trim());
+                cursor = m_search.getRecord();
+                changeAdapter(cursor, "search");
+            }
+            startActivity(in);
 
+        }
     }
     public void changeAdapter(Cursor cursor,String type){
         listitem=new  ArrayList<HashMap<String,String>>();
@@ -137,7 +146,7 @@ public class search extends AppCompatActivity{
             while(cursor.moveToNext()){
                 HashMap<String,String> map=new HashMap<>();
                 map.put("wordtext",words.getText().toString().trim());
-                map.put("detail",cursor.getString(1)+":"+cursor.getString(2)+"--"+cursor.getString(3));
+                map.put("detail",cursor.getString(1)+":"+cursor.getString(2));
                 listitem.add(map);
                 Log.i(TAG,"record::"+cursor.getString(1));
             }

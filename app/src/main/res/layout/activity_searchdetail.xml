@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".searchdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Date:"
+                android:textColor="#131212"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/notetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Notes:"
+                android:textColor="#131212"
+                android:textSize="25sp" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+                android:background="#03A9F4" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/intext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/architects_daughter"
+                    android:text="IN"
+                    android:textColor="#131212"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/wagetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="wages:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/parttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="parttime revenue:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/packettext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="redpacket:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/otherintext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="others:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/allintext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:gravity="right"
+                        android:text="all:"
+                        android:textColor="#131212"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+                android:background="#03A9F4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/outtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/architects_daughter"
+                    android:text="OUT"
+                    android:textColor="#131212"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/foodtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="food:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/entertaintext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="entertainment:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/traffictext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="traffic:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/clothestext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="clothes:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/housetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="house:"
+                        android:textColor="#131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/studytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="study:"
+                        android:textColor="#FC131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/medicaltext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="medical:"
+                        android:textColor="#F7131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/otherouttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:text="others:"
+                        android:textColor="#FA131212"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/allouttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/architects_daughter"
+                        android:gravity="right"
+                        android:text="all:"
+                        android:textColor="#F7131212"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="400dp"
+                android:layout_height="2dp"
+                android:layout_margin="10dp"
+                android:background="#03A9F4" />
+
+            <TextView
+                android:id="@+id/balancetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="BALANCE"
+                android:textColor="#131212"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

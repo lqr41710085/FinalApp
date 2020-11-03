@@ -46,7 +46,7 @@ public class Newin extends AppCompatActivity {
             Item item=new Item(date,"in",note,wage,part,packet,otherin);
             m.add(item,"in");
             Log.i(TAG,"hhhsubmit=="+totalin);
-            Toast.makeText(Newin.this,"submit successfully! "+date,Toast.LENGTH_LONG);
+            Toast.makeText(Newin.this,"submit successfully! "+date,Toast.LENGTH_LONG).show();
         }
         this.finish();
     }

@@ -6,10 +6,10 @@ public class Item {
     private int id;
     private String date,type;//in out
     private String note;
-    private float food,entertain,traffic,clothes,house,study,medical,wage,partime,packet,others,count;
+    private float food,entertain,traffic,clothes,house,study,medical,otherout,wage,partime,packet,otherin;
 
     public Item(String date, String type, String note, float food, float entertain, float traffic, float clothes, float house,
-                float study, float medical, float others){
+                float study, float medical, float otherout){
         super();
 
         this.date=date;
@@ -22,10 +22,10 @@ public class Item {
         this.house=house;
         this.study=study;
         this.medical=medical;
-        this.others=others;
-        this.count=food+entertain+traffic+clothes+house+study+medical+others;
+        this.otherout=otherout;
+
     }
-    public Item(String date, String type, String note, float wage, float partime, float packet, float others){
+    public Item(String date, String type, String note, float wage, float partime, float packet, float otherin){
         super();
         this.date=date;
         this.type=type;
@@ -33,8 +33,8 @@ public class Item {
         this.wage=wage;
         this.partime=partime;
         this.packet=packet;
-        this.others=others;
-        this.count=wage+partime+packet+others;
+        this.otherin=otherin;
+
     }
     public int getId() {
         return id;
@@ -136,6 +136,22 @@ public class Item {
         return partime;
     }
 
+    public float getOtherout() {
+        return otherout;
+    }
+
+    public void setOtherout(float otherout) {
+        this.otherout = otherout;
+    }
+
+    public float getOtherin() {
+        return otherin;
+    }
+
+    public void setOtherin(float otherin) {
+        this.otherin = otherin;
+    }
+
     public void setPartime(float partime) {
         this.partime = partime;
     }
@@ -148,21 +164,9 @@ public class Item {
         this.packet = packet;
     }
 
-    public float getOthers() {
-        return others;
-    }
 
-    public void setOthers(float others) {
-        this.others = others;
-    }
 
-    public float getCount() {
-        return count;
-    }
 
-    public void setCount(float count) {
-        this.count = count;
-    }
 
 
 

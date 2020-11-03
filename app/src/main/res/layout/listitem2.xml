@@ -9,18 +9,19 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/architects_daughter"
         android:gravity="left"
-
+        android:onClick="click"
         android:textColor="#161515"
         android:textSize="20sp" />
     <TextView
         android:id="@+id/detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/architects_daughter"
+        android:onClick="click"
         android:singleLine="true"
         android:ellipsize="end"
+        android:fontFamily="@font/architects_daughter"
         android:textColor="#9F131212"
         android:textSize="20sp"
-        android:onClick="click"
+
         />
 </LinearLayout>
