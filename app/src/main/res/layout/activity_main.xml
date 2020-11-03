@@ -6,17 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/pic"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="50dp"
-        android:clickable="true"
-        android:onClick="onclick"
-        android:src="@drawable/bookpic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchlabel" />
+
 
     <View
         android:id="@+id/divider"
@@ -25,6 +15,7 @@
         android:layout_marginTop="20dp"
         android:background="#03A9F4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -32,30 +23,37 @@
         android:id="@+id/title"
         android:layout_width="400dp"
         android:layout_height="80dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="72dp"
         android:gravity="center_horizontal"
         android:text="Light Pocket Book "
         android:textColor="#0C0C0C"
         android:textSize="40sp"
         app:fontFamily="@font/architects_daughter"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/searchlabel"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="80dp"
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:clickable="true"
-        android:gravity="center_horizontal"
         android:onClick="onclick"
-        android:text="click me to search"
-        android:textColor="#0F0E0E"
-        android:textSize="30sp"
-        app:fontFamily="@font/architects_daughter"
+        android:src="@mipmap/bookpic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintTop_toTopOf="@+id/searchlabel" />
+    <ImageView
+        android:id="@+id/searchlabel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:src="@mipmap/searchpic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -71,18 +69,29 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/pic"
-        app:layout_constraintStart_toStartOf="@+id/pic" />
+        app:layout_constraintStart_toStartOf="@+id/searchlabel" />
 
     <TextView
         android:id="@+id/newlabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:text="new book"
         android:textSize="20sp"
         app:fontFamily="@font/architects_daughter"
         app:layout_constraintEnd_toEndOf="@+id/pic"
         app:layout_constraintStart_toStartOf="@+id/pic"
         app:layout_constraintTop_toBottomOf="@+id/pic" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search record"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter"
+        app:layout_constraintEnd_toEndOf="@+id/searchlabel"
+        app:layout_constraintStart_toStartOf="@+id/searchlabel"
+        app:layout_constraintTop_toTopOf="@+id/newlabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

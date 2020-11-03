@@ -88,7 +88,7 @@ public class DBmanager {
         return cursor;
     }
     public Cursor findDetail(String date){
-        Cursor cursor=dbhelper.getReadableDatabase().rawQuery("select * from "+TBNAME+" where date="+date,null);
+        Cursor cursor=dbhelper.getReadableDatabase().rawQuery("select * from "+TBNAME+" where date='"+date+"'",null);
         return cursor;
     }
 

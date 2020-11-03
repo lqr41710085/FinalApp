@@ -130,7 +130,7 @@
         app:layout_constraintTop_toTopOf="@+id/notel" />
     <Button
         android:id="@+id/insubmit"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:onClick="submit"
