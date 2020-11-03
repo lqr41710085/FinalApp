@@ -21,6 +21,9 @@ public class DBmanager {
         values.put("date",item.getDate());
         values.put("type",item.getType());
         values.put("note",item.getNote());
+        //
+        //判断日期是否重复，进行合并
+
         if(type.equals("in")){
             //(String date, String type, String note, float wage, float partime, float packet, float others)
         values.put("wage",item.getWage());

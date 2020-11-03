@@ -48,7 +48,7 @@ public class search extends AppCompatActivity{
         m_db = new DBmanager(this);
         cursor = m_search.getRecord();
         Log.i(TAG,"cursor ok::");
-        changeAdapter(cursor);
+        changeAdapter(cursor,"search");
         Log.i(TAG, "adapter  ok");
         words.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -77,15 +77,16 @@ public class search extends AppCompatActivity{
             public void afterTextChanged(Editable s) {
                 if (words.getText().toString().equals("")) {
                     history.setText("History");
-
                     cursor = m_search.getRecord();//历史
+                    changeAdapter(cursor,"search");
                 } else {
                     history.setText("Result");
                     //结果
                     cursor = m_db.findRecord(words.getText().toString());
+                    changeAdapter(cursor,"db");
                 }
-                //修改adapter
-                changeAdapter(cursor);
+
+
             }
         });
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -97,7 +98,7 @@ public class search extends AppCompatActivity{
                     if(!m_search.findRecord(words.getText().toString().trim()).moveToNext()) {
                         m_search.addRecord(words.getText().toString().trim());
                         cursor = m_search.getRecord();
-                        changeAdapter(cursor);
+                        changeAdapter(cursor,"search");
                     }
 
             }
@@ -109,7 +110,7 @@ public class search extends AppCompatActivity{
             ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE))
                     .hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),InputMethodManager.HIDE_NOT_ALWAYS);
             cursor = m_db.findRecord(words.getText().toString().trim());
-            changeAdapter(cursor);
+            changeAdapter(cursor,"db");
             m_search.addRecord(words.getText().toString().trim());
             Log.i(TAG,"add ok ");
         }
@@ -117,19 +118,31 @@ public class search extends AppCompatActivity{
             m_search.clearRecord();
             Log.i(TAG,"clear finished! ");
             cursor = m_search.getRecord();
-            changeAdapter(cursor);
+            changeAdapter(cursor,"search");
         }
 
     }
-    public void changeAdapter(Cursor cursor){
+    public void changeAdapter(Cursor cursor,String type){
         listitem=new  ArrayList<HashMap<String,String>>();
-        while(cursor.moveToNext()){
-            HashMap<String,String> map=new HashMap<>();
-            map.put("words",cursor.getString(1));
-            listitem.add(map);
-            Log.i(TAG,"record::"+cursor.getString(1));
+        if(type.equals("search")){
+            while(cursor.moveToNext()){
+                HashMap<String,String> map=new HashMap<>();
+                map.put("words",cursor.getString(1));
+                listitem.add(map);
+                Log.i(TAG,"record::"+cursor.getString(1));
+             }
+            adapter = new SimpleAdapter(search.this, listitem,R.layout.listitem, new String[]{"words"}, new int[]{R.id.item});
         }
-        adapter = new SimpleAdapter(search.this, listitem,R.layout.listitem, new String[]{"words"}, new int[]{R.id.item});
+        if(type.equals("db")){
+            while(cursor.moveToNext()){
+                HashMap<String,String> map=new HashMap<>();
+                map.put("wordtext",words.getText().toString().trim());
+                map.put("detail",cursor.getString(1)+":"+cursor.getString(2)+"--"+cursor.getString(3));
+                listitem.add(map);
+                Log.i(TAG,"record::"+cursor.getString(1));
+            }
+            adapter = new SimpleAdapter(search.this, listitem,R.layout.listitem2, new String[]{"wordtext","detail"}, new int[]{R.id.wordtext,R.id.detail});
+        }
         listview.setAdapter(adapter);
         setListViewHeightBasedOnChildren(listview);
     }
