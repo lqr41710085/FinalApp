@@ -24,8 +24,8 @@
         android:id="@+id/wagelabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
         android:text="Wage"
         android:textColor="#181616"
@@ -38,8 +38,8 @@
         android:id="@+id/wage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/wagelabel"
@@ -133,17 +133,17 @@
         android:id="@+id/insubmit"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:onClick="submit"
+        android:layout_marginTop="30dp"
 
+        android:onClick="submit"
         android:text="Submit"
         android:textColor="#181616"
         android:textSize="20sp"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
