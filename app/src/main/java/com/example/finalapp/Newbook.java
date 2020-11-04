@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 
 import java.util.Calendar;
-
+import java.util.Date;
 
 
 public class Newbook extends AppCompatActivity {
@@ -30,6 +30,8 @@ public class Newbook extends AppCompatActivity {
         cal=Calendar.getInstance();
         int y=cal.get(Calendar.YEAR),m=cal.get(Calendar.MONTH)+1,d=cal.get(Calendar.DATE);//初始化为今天日期,月份取值范围为0-11
         date=y+"-"+m+"-"+d;
+        Date dd=new Date();
+        datePicker.setMaxDate(dd.getTime());
         datePicker.init(y, m-1, d, new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {

@@ -21,7 +21,7 @@ public class DBmanager {
         Cursor cursor=dbr.rawQuery("select * from "+TBNAME+" where DATE='"+item.getDate()+"'",null);
         ContentValues values=new ContentValues();
         if(cursor.moveToNext()){
-            values.put("note",cursor.getString(2)+";"+item.getNote());
+            values.put("note",cursor.getString(2)+" ;"+item.getNote());
             if(type.equals("in")){
                 //(String date, String type, String note, float wage, float partime, float packet, float others)
                 values.put("wage",cursor.getFloat(11)+item.getWage());

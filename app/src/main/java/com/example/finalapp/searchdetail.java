@@ -27,7 +27,7 @@ public class searchdetail extends AppCompatActivity {
             TextView v=findViewById(R.id.datetext);
             v.setText(date);
             v=findViewById(R.id.notetext);
-            v.setText(cursor.getString(2));
+            v.setText("Notes: "+cursor.getString(2));
             v=findViewById(R.id.foodtext);
             v.setText(cursor.getString(3));
             v=findViewById(R.id.entertaintext);
@@ -62,7 +62,7 @@ public class searchdetail extends AppCompatActivity {
             v.setText("all: "+all2+" ");
             v=findViewById(R.id.balancetext);
             float balance=cursor.getFloat(15);
-            v.setText("Balance of This Day: "+balance);
+            v.setText("Balance: "+balance);
             if(balance<0){
                 v.setTextColor(Color.parseColor("#F44336"));
             }

@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
+import java.util.Date;
 
 public class report extends AppCompatActivity {
 
@@ -36,6 +37,8 @@ public class report extends AppCompatActivity {
         cal= Calendar.getInstance();
         int y=cal.get(Calendar.YEAR),m=cal.get(Calendar.MONTH)+1;//初始化为今天日期,月份取值范围为0-11
         date=y+"-"+m;
+        Date dd=new Date();
+        d.setMaxDate(dd.getTime());
         d.init(y, m,0, new DatePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
