@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class report extends AppCompatActivity {
 
@@ -33,7 +34,12 @@ public class report extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
         d=findViewById(R.id.ym);
-        ((ViewGroup)((ViewGroup)d.getChildAt(0)).getChildAt(0)).getChildAt(1).setVisibility(View.GONE);
+        Locale l=getResources().getConfiguration().locale;
+        String language=l.getLanguage();
+        if(language.endsWith("en"))
+            ((ViewGroup)((ViewGroup)d.getChildAt(0)).getChildAt(0)).getChildAt(1).setVisibility(View.GONE);
+        else    //检测中英文
+            ((ViewGroup)((ViewGroup)d.getChildAt(0)).getChildAt(0)).getChildAt(2).setVisibility(View.GONE);
         cal= Calendar.getInstance();
         int y=cal.get(Calendar.YEAR),m=cal.get(Calendar.MONTH)+1;//初始化为今天日期,月份取值范围为0-11
         date=y+"-"+m;
