@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -59,9 +60,12 @@ public class searchdetail extends AppCompatActivity {
             float all2=cursor.getFloat(11)+cursor.getFloat(12)+cursor.getFloat(13)+cursor.getFloat(14);
             v=findViewById(R.id.allintext);
             v.setText("all: "+all2+" ");
-
             v=findViewById(R.id.balancetext);
-            v.setText("Balance:"+(all2-all));
+            float balance=cursor.getFloat(15);
+            v.setText("Balance of This Day: "+balance);
+            if(balance<0){
+                v.setTextColor(Color.parseColor("#F44336"));
+            }
         }
 
     }

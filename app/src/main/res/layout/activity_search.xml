@@ -61,7 +61,7 @@
                         android:fontFamily="@font/architects_daughter"
                         android:gravity="left|center_vertical"
                         android:text="History"
-                        android:textColor="#0C0C0C"
+                        android:textColor="#0F0F0F"
                         android:textSize="20sp"
                         app:fontFamily="casual" />
 

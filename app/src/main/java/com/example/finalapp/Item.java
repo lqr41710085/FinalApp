@@ -24,6 +24,7 @@ public class Item {
         this.medical=medical;
         this.otherout=otherout;
 
+
     }
     public Item(String date, String type, String note, float wage, float partime, float packet, float otherin){
         super();

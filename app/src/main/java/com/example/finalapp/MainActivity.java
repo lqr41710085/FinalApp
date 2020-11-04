@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
             Intent in=new Intent(this,search.class);
             startActivity(in);
         }
+        if(btn.getId()==R.id.reportpic){
+            Intent in=new Intent(this,report.class);
+            startActivity(in);
+        }
     }
 
 

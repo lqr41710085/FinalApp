@@ -19,9 +19,9 @@ public class DBHelper extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {//ID,日期,备注,food，entertain,traffic,clothes,house,study,medical,其他
-                                            // 工资、兼职、红包、其他
+                                            // 工资、兼职、红包、其他,balance
             db.execSQL("CREATE TABLE "+TB_NAME+"(ID INTEGER PRIMARY KEY AUTOINCREMENT,DATE TEXT,NOTE TEXT,FOOD REAL,ENTERTAIN REAL,TRAFFIC REAL," +
-                    "CLOTHES REAL,HOUSE REAL,STUDY REAL,MEDICAL REAL,OTHEROUT REAL,WAGE REAL,PARTIME REAL,PACKET REAL,OTHERIN REAL)");
+                    "CLOTHES REAL,HOUSE REAL,STUDY REAL,MEDICAL REAL,OTHEROUT REAL,WAGE REAL,PARTIME REAL,PACKET REAL,OTHERIN REAL,BALANCE REAL)");
     }
 
     @Override

@@ -23,7 +23,7 @@
         android:id="@+id/title"
         android:layout_width="400dp"
         android:layout_height="80dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
         android:text="Light Pocket Book "
         android:textColor="#0C0C0C"
@@ -44,13 +44,14 @@
         android:src="@mipmap/bookpic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/searchlabel" />
+
     <ImageView
         android:id="@+id/searchlabel"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="50dp"
         android:clickable="true"
         android:onClick="onclick"
         android:src="@mipmap/searchpic"
@@ -96,5 +97,28 @@
         app:layout_constraintEnd_toEndOf="@+id/searchlabel"
         app:layout_constraintStart_toStartOf="@+id/searchlabel"
         app:layout_constraintTop_toTopOf="@+id/newlabel" />
+
+    <ImageView
+        android:id="@+id/reportpic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toEndOf="@+id/pic"
+        app:layout_constraintStart_toStartOf="@+id/searchlabel"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@mipmap/reportpic" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="check report"
+        android:textSize="20sp"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="@+id/reportpic"
+        app:layout_constraintStart_toStartOf="@+id/reportpic"
+        app:layout_constraintTop_toBottomOf="@+id/reportpic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

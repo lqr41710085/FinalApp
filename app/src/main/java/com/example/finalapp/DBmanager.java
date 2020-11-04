@@ -28,6 +28,7 @@ public class DBmanager {
                 values.put("partime",cursor.getFloat(12)+item.getPartime());
                 values.put("packet",cursor.getFloat(13)+item.getPacket());
                 values.put("otherin",cursor.getFloat(14)+item.getOtherin());
+                values.put("balance",cursor.getFloat(15)+item.getWage()+item.getPartime()+item.getPacket()+item.getOtherin());
             }
             if(type.equals("out")){
                 // float food, float entertain, float traffic, float clothes,
@@ -40,6 +41,8 @@ public class DBmanager {
                 values.put("study",cursor.getFloat(8)+item.getStudy());
                 values.put("medical",cursor.getFloat(9)+item.getMedical());
                 values.put("otherout",cursor.getFloat(10)+item.getOtherout());
+                values.put("balance",cursor.getFloat(15)-item.getFood()-item.getEntertain()-item.getTraffic()
+                        -item.getClothes()-item.getHouse()-item.getStudy()-item.getMedical()-item.getOtherout());
             }
             db.update(TBNAME,values,"DATE=?",new String[]{item.getDate()});
             db.close();
@@ -60,6 +63,7 @@ public class DBmanager {
                 values.put("partime",item.getPartime());
                 values.put("packet",item.getPacket());
                 values.put("otherin",item.getOtherin());
+                values.put("balance",item.getWage()+item.getPartime()+item.getPacket()+item.getOtherin());
             }
             if(type.equals("out")){
                 // float food, float entertain, float traffic, float clothes,
@@ -76,6 +80,8 @@ public class DBmanager {
                 values.put("partime",0);
                 values.put("packet",0);
                 values.put("otherin",0);
+                values.put("balance",-item.getFood()-item.getEntertain()-item.getTraffic()
+                        -item.getClothes()-item.getHouse()-item.getStudy()-item.getMedical()-item.getOtherout());
             }
             db.insert(TBNAME,null,values);
             db.close();
@@ -91,5 +97,9 @@ public class DBmanager {
         Cursor cursor=dbhelper.getReadableDatabase().rawQuery("select * from "+TBNAME+" where date='"+date+"'",null);
         return cursor;
     }
+    public Cursor findDetails(String date){
 
+        Cursor cursor=dbhelper.getReadableDatabase().rawQuery("select * from "+TBNAME+" where date like '"+date+"%'",null);
+        return cursor;
+    }
 }
